@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eigen</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header class="fixed w-full z-50 top-0">
+      <!-- Top Bar -->
+      <div class="bg-[#004990] text-white py-2 text-xs md:text-sm lg:text-base">
+        <div
+          class="px-4 lg:px-12 xl:px-18 mx-auto flex justify-between items-center gap-4"
+        >
+          <!-- Left Side -->
+          <div class="flex items-center space-x-4 justify-center">
+            <div class="flex items-center space-x-3">
+              <a href="#" class="hover:text-gray-300 text-lg"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-300 text-lg"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-300 text-lg"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </div>
+            <div class="flex items-center gap-3 text-xs md:text-sm">
+              <a class="inline-block cursor-pointer text-nowrap"
+                ><i class="fa-solid fa-phone"></i> (+91) 80 68476500</a
+              >
+              <a class="inline-block cursor-pointer text-nowrap"
+                ><i class="fa-solid fa-envelope"></i>
+                info@eigenengineering.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div class="text-center text-xs md:text-sm hidden xl:block">
+            <p>
+              AS 9100 D, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, ISO
+              9001, IATF 16949 Certified Company
+            </p>
+          </div>
+
+          <!-- Right Side -->
+          <div class="flex items-center gap-3 md:gap-5">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                class="pr-3 pl-9 py-2 rounded-full text-white bg-[#002B55] placeholder:text-white outline-0 w-[140px] lg:w-[180px] xl:w-[220px]"
+              />
+              <button
+                class="absolute left-4 top-1/2 transform -translate-y-1/2"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="h-[40px] w-[120px] lg:h-[50px] lg:w-[150px]">
+              <img
+                src="/assets/home/image.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav
+        class="bg-[#002B55] text-white py-2 border-b border-white/50 border-t"
+      >
+        <div
+          class="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 mx-auto flex flex-wrap md:flex-nowrap justify-between items-center gap-3 sm:gap-4 md:gap-6"
+        >
+          <!-- Logo -->
+          <div class="flex items-center flex-shrink-0">
+            <img
+              src="/assets/home/logo.png"
+              alt="Eigen Logo"
+              class="h-[30px] w-[80px] sm:h-[35px] sm:w-[90px] md:h-[40px] md:w-[100px] lg:h-[45px] lg:w-[110px] xl:h-[50px] xl:w-[120px]"
+            />
+          </div>
+
+          <!-- Navigation Menu -->
+          <div class="hidden lg:block">
+            <ul
+              class="flex justify-center gap-2 sm:gap-3 md:gap-5 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg items-center whitespace-nowrap"
+            >
+              <li><a href="#" class="hover:text-gray-300">Home</a></li>
+              <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Capabilities <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Industries <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li><a href="#" class="hover:text-gray-300">Quality</a></li>
+              <li><a href="#" class="hover:text-gray-300">Products</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Media <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li><a href="#" class="hover:text-gray-300">News & Events</a></li>
+              <li><a href="#" class="hover:text-gray-300">Facility</a></li>
+              <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Button -->
+          <div class="flex-shrink-0">
+            <button
+              class="bg-white text-blue-800 px-3 sm:px-4 py-1 rounded-full font-semibold cursor-pointer hover:bg-gray-200 text-xs sm:text-sm"
+            >
+              Request for Quote
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-[#004990] mt-[130px] w-full overflow-hidden">
+      <div class="w-[90%] mx-auto">
+        <div class="grid grid-cols-2">
+          <div class="md:py-4 p-2">
+            <p
+              class="text-white text-2xl md:text-3xl lg:text-4xl font-bold w-[400px]"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Shaping the Future of Engineering Innovation
+            </p>
+          </div>
+          <div class="p-4 flex justify-center items-end">
+            <p
+              class="text-white text-sm md:text-lg"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Delivering cutting-edge solutions in precision manufacturing and
+              engineering design, trusted by industries worldwide.
+            </p>
+          </div>
+          <div class="relative col-span-2 mt-4">
+            <img
+              src="assets/home/149.jpg"
+              alt="Engineer in Factory"
+              class="w-full h-full object-cover opacity-90 bg-center"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="2500"
+              data-aos-once="true"
+            />
+            <div
+              class="absolute bottom-0 right-[-6%] bg-[#002B55] opacity-70 p-4 w-[500px]"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <h1 class="text-[#A4E3FA] text-lg font-bold">
+                The Eigen Difference
+              </h1>
+              <p class="text-white text-sm">
+                Leverage our technical expertise to produce less expensive
+                parts:
+              </p>
+              <ul class="list-disc pl-5 text-white text-sm">
+                <li>Lower Part and Tooling costs</li>
+                <li>More Precise parts can now be stamped</li>
+                <li>End-to-End Metal Stamping Solutions Provider</li>
+                <li>Plastic Part</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative mt-24 min-h-[700px]">
+      <div
+        class="flex flex-wrap lg:flex-nowrap justify-between lg:gap-3 items-start w-[90%] z-20 lg:h-[260px] pb-6 mx-auto mb-4"
+      >
+        <div
+          class="flex flex-col justify-between items-start h-[270px] sm:h-[200px] lg:h-full"
+        >
+          <h1
+            class="text-[#4A4A4A] text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Eigen - the leader in <br />
+            Precision Metal Stamping
+          </h1>
+          <p
+            class="text-[#606060] mt-5"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Eigen is an IATF 16949, ISO AS 9100 D, ISO 45001:2018, ISO
+            14001:2015 and ISO 9001:2015 certified company that specializes in
+            precision press die design, progressive die development and the
+            manufacture of metal stamping components, plastic injection molds,
+            insert and over molds, Electroplating (Barrel), Sub-Assemblies and
+            Value Added Services.
+          </p>
+        </div>
+        <div
+          class="flex items-end justify-center h-[220px] sm:h-[150px] lg:h-full"
+        >
+          <p
+            class="text-[#606060]"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            We work with a wide range of industries, such as Electrical &
+            Electronics, Aerospace, Automotive,Consumer durablesand others in
+            India, Europe and US markets.
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[95%] md:w-[80%] mx-auto mt-10 absolute inset-x-0 bottom-[-40px] z-30"
+        data-aos="slide-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <img src="/assets/home/DSC06952.jpg" alt="" />
+        <div
+          class="flex justify-between items-center px-2 py-4 absolute bottom-6 w-full xl:w-[90%]"
+        >
+          <div
+            class="border-l-[3px] md:border-l-4 border-[#2393FF] px-1 sm:px-2 md:px-3 lg:px-6 xl:px-10"
+          >
+            <p
+              class="w-[230px] text-lg md:w-[280px] text-white md:text-2xl lg:w-[350px] lg:text-3xl xl:w-[418px] xl:text-4xl"
+            >
+              Custom Engineered Close Tolerance Components
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-full h-[50px] w-[50px] xl:h-[90px] xl:w-[90px] flex justify-center items-center"
+          >
+            <i class="fa-solid fa-play text-2xl xl:text-4xl leading-none"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative">
+      <div class="md:flex">
+        <div class="flex justify-center md:w-1/2 w-full p-4 md:p-2">
+          <div class="md:w-2/3 w-full mt-16">
+            <h1
+              class="text-4xl text-black/70 font-semibold"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              We offer a wide array of services
+            </h1>
+            <p
+              class="text-md text-black/70 mt-4"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              We work with a wide range of industries, such as Electrical &
+              Electronics, Aerospace, Automotive,Consumer durables and others in
+              India, Europe and US markets.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:w-1/2 w-full h-[500px] md:h-[800px]"
+          class="relative"
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <img
+            src="/assets/home/DSC00777.jpg"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        class="md:absolute lg:bottom-20 bottom-0 lg:left-20 left-0 z-30 p-5 bg-black/10"
+        data-aos="slide-up"
+        data-aos-easing="linear"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <div class="grid grid-cols-4 md:grid-cols-5 gap-2">
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/designing.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/tools.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/stamping.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/assembly.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/plating.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/plastic.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/molding.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img
+                src="assets/home/over-molding.png"
+                alt=""
+                class="w-16 h-16"
+              />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/prototyping.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 relative group overflow-hidden border-s-3 border-[#004990] bg-white max-w-[200px] h-[180px]"
+          >
+            <!-- Main Content -->
+            <div class="flex flex-col justify-center items-start h-full p-6">
+              <img src="assets/home/services.png" alt="" class="w-16 h-16" />
+              <p
+                class="text-xl text-wrap text-left text-[#002B55] font-semibold mt-2"
+              >
+                Design & Engineering
+              </p>
+            </div>
+
+            <!-- Hover Layer -->
+            <div
+              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+            >
+              <p class="text-center text-sm">
+                We Help Design and Manufacture complex die design with close
+                tolerance
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#002B55] grid grid-cols-2 min-h-[800px]">
+      <div
+        class="col-span-2 md:col-span-1 border-e-1 border-white md:relative flex"
+      >
+        <div class="md:absolute top-[15%] start-[10%] inset-x-0 z-20">
+          <img
+            src="/assets/home/DSC07066.jpg"
+            class="lg:w-96 w-56 lg:h-96 h-56"
+            alt=""
+          />
+        </div>
+        <div class="md:absolute bottom-[5%] start-[50%] inset-x-0">
+          <img
+            src="/assets/home/DSC06864.jpg"
+            class="lg:w-72 w-56 lg:h-72 h-56"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-span-2 md:col-span-1 flex flex-col justify-center">
+        <div
+          class="flex justify-start items-start border-b-1 border-white p-2 md:p-8 gap-3"
+        >
+          <img src="assets/home/cpu.png" class="w-14 h-14" alt="" />
+          <div class="text-white">
+            <p class="text-2xl font-semibold">Electrical & Electronics</p>
+            <p class="">
+              O/L relays, circuit breakers, miniature motors, switch gears,
+              electronic article surveillance, tube fuses, and electronic time
+              locks.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-start items-start border-b-1 border-white p-2 md:p-8 gap-3"
+        >
+          <img src="assets/home/flight.png" class="w-14 h-14" alt="" />
+          <div class="text-white">
+            <p class="text-2xl font-semibold">Aerospace</p>
+            <p class="">
+              HV relays, connectors, cabin light sensors, electromechanical
+              relays, and aerospace batteries.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-start items-start border-b-1 border-white p-2 md:p-8 gap-3"
+        >
+          <img src="assets/home/car.png" class="w-14 h-14" alt="" />
+          <div class="text-white">
+            <p class="text-2xl font-semibold">Automotive & Ancillary</p>
+            <p class="">
+              Window lift motors, car door lock actuators, steering locks,
+              coolant pump sealing, light indicators, engine knock sensors,
+              starter solenoid valves, and safety applications.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-start items-start border-b-1 border-white p-2 md:p-8 gap-3"
+        >
+          <img src="assets/home/retail.png" class="w-14 h-14" alt="" />
+          <div class="text-white">
+            <p class="text-2xl font-semibold">Consumer Durables</p>
+            <p class="">
+              Mobile charger contacts, LH & RH terminals, and connectors.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-start items-start p-2 md:p-8 gap-3">
+          <img src="assets/home/claw.png" class="w-14 h-14" alt="" />
+          <div class="text-white">
+            <p class="text-2xl font-semibold">Industrial Engineering</p>
+            <p class="">Industrial batteries, current bars, and solder tags.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-[90%] mx-auto grid grid-cols-2">
+        <div class="flex justify-start">
+          <div class="flex flex-col justify-center items-start w-2/3">
+            <p
+              class="text-5xl font-bold lg:w-[70%] w-full text-black/70 mb-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Trusted by Great Brands
+            </p>
+            <p
+              class="mb-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              Empowering industry leaders with precision engineering,
+              cutting-edge solutions, and unwavering commitment to quality. Our
+              partnerships are built on trust, innovation, and proven
+              excellence.
+            </p>
+            <p
+              class="mb-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              Eigen works and delivers precision to the best in the industry.
+              Here s a look at some of the companies we ve partnered with
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos-easing="linear"
+          data-aos="flip-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <img src="assets/home/brands.png" class="" alt="" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-6 my-5">
+        <div class="col-span-2">
+          <img src="assets/home/77214.jpg" class="w-full h-[700px]" alt="" />
+        </div>
+        <div class="col-span-4 flex flex-col justify-center items-center">
+          <div class="w-[90%] mx-auto mb-8">
+            <p class="text-4xl font-semibold text-black/70 mb-4">
+              What Our Clients Say
+            </p>
+            <p class="text-2xl">Delivering Precision, Quality, and Trust</p>
+          </div>
+
+          <div class="relative w-[90%] mx-auto">
+            <div class="owl-carousel owl-theme">
+              <div class="ps-6">
+                <div class="relative bg-sky-100 min-h-[350px] w-full p-4">
+                  <h3 class="text-xl text-sky-600 font-semibold">
+                    Exceptional Precision and Reliability
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed">
+                    Eigen Engineering has been a game-changer for our
+                    manufacturing process...
+                  </p>
+                </div>
+                <div
+                  class="absolute bottom-6 start-0 bg-[#002B55] text-white px-4 py-2"
+                >
+                  <p class="mt-4 font-medium text-white/90">
+                    – John D., Operations Manager
+                  </p>
+                  <p>Automotive Sector</p>
+                </div>
+              </div>
+              <div class="ps-6">
+                <div class="relative bg-sky-100 min-h-[350px] w-full p-4">
+                  <h3 class="text-xl text-sky-600 font-semibold">
+                    Exceptional Precision and Reliability
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed">
+                    Eigen Engineering has been a game-changer for our
+                    manufacturing process...
+                  </p>
+                </div>
+                <div
+                  class="absolute bottom-6 start-0 bg-[#002B55] text-white px-4 py-2"
+                >
+                  <p class="mt-4 font-medium text-white/90">
+                    – John D., Operations Manager
+                  </p>
+                  <p>Automotive Sector</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-4 mt-8">
+              <button
+                class="prev-btn text-[#004a93] text-2xl flex items-center justify-center hover:text-blue-800 transition"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+
+              <button
+                class="next-btn text-[#002B55] text-2xl flex items-center justify-center hover:text-blue-800 transition"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="w-[90%] mx-auto grid grid-cols-2">
+        <div class="flex justify-start">
+          <div class="flex flex-col justify-center items-start w-2/3">
+            <p
+              class="text-5xl font-bold text-black/70 mb-4"
+              data-aos-easing="linear"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              A Multinational Clientele
+            </p>
+            <p
+              class="mb-4"
+              data-aos-easing="linear"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              With operations around the world, chances are Eigen has a presence
+              where you are. Find out what we do in your country, who our
+              partners are and how we re working to develop an even stronger,
+              more satisfied clientele across the globe.
+            </p>
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full shadow-md transition-all duration-300"
+              data-aos-easing="linear"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Get in Touch →
+            </button>
+          </div>
+        </div>
+        <div
+          data-aos-easing="linear"
+          data-aos="flip-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <img src="assets/home/Group.png" class="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="relative">
+        <div class="w-full bg-sky-200 opacity-25 flex justify-end">
+          <img src="assets/home/Vector.png" class="w-1/2 h-[700px]" alt="" />
+        </div>
+        <div class="absolute top-0 w-full h-full overflow-hidden">
+          <div class="grid grid-cols-3 w-[90%] mx-auto py-4 gap-8">
+            <div class="col-span-3 lg:w-1/3 md:2/3 py-5">
+              <p class="text-5xl font-bold text-black/70 mb-4">
+                Our Latest Blogs
+              </p>
+              <p class="text-sm">
+                Discover insights, innovations, and industry trends that drive
+                precision and performance
+              </p>
+            </div>
+            <div
+              class="bg-white/30"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <img
+                src="assets/home/Frame 49 (1).jpg"
+                alt=""
+                class="w-full h-60 object-cover"
+              />
+              <div class="py-5">
+                <h2 class="text-[#002B55] text-2xl font-semibold">
+                  Revolutionizing Precision Engineering
+                </h2>
+                <p class="text-gray-600 mt-2">
+                  Discover how cutting-edge technology and innovative techniques
+                  are shaping the future of precision manufacturing, ensuring
+                  accuracy and efficiency in every component.
+                </p>
+
+                <button
+                  class="mt-4 py-2 text-blue-800 font-medium rounded-lg hover:text-[#002B55]"
+                >
+                  Read More →
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white/30"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <img
+                src="assets/home/Frame 49 (1).jpg"
+                alt=""
+                class="w-full h-60 object-cover"
+              />
+              <div class="py-5">
+                <h2 class="text-[#002B55] text-2xl font-semibold">
+                  Revolutionizing Precision Engineering
+                </h2>
+                <p class="text-gray-600 mt-2">
+                  Discover how cutting-edge technology and innovative techniques
+                  are shaping the future of precision manufacturing, ensuring
+                  accuracy and efficiency in every component.
+                </p>
+
+                <button
+                  class="mt-4 py-2 text-blue-800 font-medium rounded-lg hover:text-[#002B55]"
+                >
+                  Read More →
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white/30"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              <img
+                src="assets/home/Frame 49 (1).jpg"
+                alt=""
+                class="w-full h-60 object-cover"
+              />
+              <div class="py-5">
+                <h2 class="text-[#002B55] text-2xl font-semibold">
+                  Revolutionizing Precision Engineering
+                </h2>
+                <p class="text-gray-600 mt-2">
+                  Discover how cutting-edge technology and innovative techniques
+                  are shaping the future of precision manufacturing, ensuring
+                  accuracy and efficiency in every component.
+                </p>
+
+                <button
+                  class="mt-4 py-2 text-blue-800 font-medium rounded-lg hover:text-[#002B55]"
+                >
+                  Read More →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-[#002B55] pt-5">
+        <div
+          class="w-[90%] mx-auto bg-sky-800 flex justify-between items-center p-5 lg:my-8 my-4"
+        >
+          <p class="text-white">
+            Backed by decades of expertise in design, development, manufacturing
+            and supply of progressive met
+          </p>
+          <button
+            class="px-3 py-2 bg-white rounded-full text-sky-500 font-semibold"
+          >
+            Request a Quote
+          </button>
+        </div>
+        <div class="grid grid-cols-5 w-[90%] mx-auto">
+          <div class="bg-[#002B55] text-white p-6 rounded-lg text-center">
+            <div class="flex justify-start">
+              <img
+                src="assets/home/Frame 5 (1).png"
+                alt="Logo"
+                class="w-48 h-auto"
+              />
+            </div>
+            <p class="mt-4 text-sm text-start">
+              Empowering industry leaders with precision engineering,
+              cutting-edge solutions, and unwavering commitment to quality.
+            </p>
+            <div class="flex justify-start gap-4 mt-4">
+              <a
+                href="#"
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-white text-[#002B55] shadow-lg transition-all duration-300 hover:bg-gray-200"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-white text-[#002B55] shadow-lg transition-all duration-300 hover:bg-gray-200"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-white text-[#002B55] shadow-lg transition-all duration-300 hover:bg-gray-200"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col items-start justify-center text-start">
+            <p class="text-2xl text-sky-400 font-semibold">Customer Services</p>
+            <ul class="text-sm text-white leading-relaxed space-y-2 mt-2">
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Company Fact Sheet</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Request a Quote</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Terms of Use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Privacy & Cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-start justify-center text-start">
+            <p class="text-2xl text-sky-400 font-semibold">Learn More</p>
+            <ul class="text-sm text-white leading-relaxed space-y-2 mt-2">
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Tool and Die Design Engineering</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Tooling</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Assembly & Sub-Assembly</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Plating</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white/50 transition-all"
+                  >Plastic Injection Molding</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col items-start justify-center text-start text-white"
+          >
+            <p class="text-2xl text-sky-400 font-semibold">Eigen USA</p>
+            <div>
+              <p class="font-semibold">Address - 1:</p>
+              <p>4201 Military Highway</p>
+              <p>McAllen, Texas 78503 USA.</p>
+              <p>
+                Phone:
+                <a
+                  href="tel:+12489334593"
+                  class="hover:text-white/50 transition-all"
+                  >+1 248 933 4593</a
+                >
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold">Address - 2:</p>
+              <p>409 Rivanna Lane</p>
+              <p>Greenville, SC 29607.</p>
+              <p>
+                Phone:
+                <a
+                  href="tel:+12489334593"
+                  class="hover:text-white/50 transition-all"
+                  >+1 248 933 4593</a
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-center text-start text-white space-y-4"
+          >
+            <div>
+              <p class="text-2xl text-sky-400 font-semibold">Eigen India</p>
+              <p class="font-semibold">KDDL Ltd. Unit Eigen</p>
+              <p>No.55-A, Hunachur Village, Jala Hobli,</p>
+              <p>Yelahanka Taluk, Bangalore North</p>
+              <p>Near Kiadb Aerospace Park</p>
+              <p>Bangalore, Karnataka 562149</p>
+              <p>
+                Phone:
+                <a
+                  href="tel:+918068476500"
+                  class="hover:text-white/50 transition-all"
+                  >(+91) 80 68476500</a
+                >
+              </p>
+              <p>Ext: 312</p>
+              <p>
+                Email:
+                <a
+                  href="mailto:info@eigenengineering.com"
+                  class="hover:text-white/50 transition-all"
+                  >info@eigenengineering.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#004990] p-4">
+        <p class="text-sm text-white text-center">
+          Non Copyrighted © 2022 Design and upload by rich technologies
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
